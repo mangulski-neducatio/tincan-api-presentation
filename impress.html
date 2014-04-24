@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>TinCan API</title>
+    <style>
+    body{
+        width:1024px;
+        font-size: 36px;
+        font-family: 'Armata', sans-serif;
+        background-color: #fff; 
+        background-image: 
+        linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+        linear-gradient(#eee .1em, transparent .1em);
+        background-size: 100% 1.2em;
+    }
+    * {
+        color: #444444;
+        text-shadow: 1px 1px 2px #000;
+    }
+    .step {
+        text-align:center;
+        width:1000px;
+    }
+    .fallback-message {
+        color: #eee;
+        line-height: 1.3;
+        width: 780px;
+        padding: 10px 10px 0;
+        margin: 20px auto;
+        border: 1px solid #E4C652;
+        border-radius: 10px;
+    }
+    .fallback-message p {
+        margin-bottom: 10px;
+    }
+    .impress-supported .fallback-message {
+        display: none;
+    }
+    em{
+        font-style: normal;
+        border-bottom: 1px solid #484d52;
+        padding-bottom: 2px;
+        color: #d5a830;
+    }
+    .left {
+        text-align: left;
+        margin-left: 20px;
+    }
+    .right {
+        text-align: right;
+        margin-right: 20px;
+    }
+    .big {
+        font-size: 1.5em;
+    }
+    .medium {
+        font-size: 1em;
+    }
+    .small {
+        font-size: 0.6em;
+    }
+    cite .red {
+        color: rgba(255,0,0,0.4);
+    }
+    .red {
+        color: red;
+    }
+    cite .green {
+        color: rgba(0,255,0,0.4);
+    }
+    .green{
+        color: green;
+    }
+    cite .blue {
+        color: rgba(0,0,255,0.4);
+    }
+    .blue{
+        color: blue;
+    }
+    #wyrazenie > span {
+        display: inline-block;
+        margin: 20px;
+    }
+    #wyrazenie > span > * {
+        display: block;
+        margin: 0 auto;
+    }
+    ul {
+        text-align: left;
+        list-style: none;
+    }
+    ul li {
+        padding-bottom: 0.5em;
+    }
+    </style>
+</head>
+<body class="impress-not-supported">
+    <div id="impress">
+        <div id="dlaczego" class="step">
+            <h1>Nauka</h1>
+            <h3 class="left">Wiedza</h3>
+            <h3 class="right">Doświadczenie</h3>
+            <h3>Umiejętności</h3>
+        </div>
+        <div id="jak" class="step" data-x="1200">
+            <h2>W jaki sposób przechowywać te informacje, aby były one nam lub innym osobom przydatne?</h2>
+        </div>
+        <div id="co" class="step" data-x="2200">
+            <h1>TinCan API</h1>
+            <p>(Experience API)</p>
+        </div>
+        <div id="podstawy" class="step" data-x="1800" data-y="800">
+            <p>
+                <span class="big red">Podmiot</span>
+                <span class="big green">Orzeczenie</span>
+                <span class="big blue">Dopełnienie</span>
+            </p>
+            <p>
+                <cite>"
+                    <span class="medium red">Mateusz</span>
+                    <span class="medium green">przeczytał</span>
+                    <span class="medium blue">artykuł</span>    
+                "</cite>
+            </p>
+        </div>
+        <div id="fb" class="step" data-x="1800" data-y="6000" data-z="-10000">
+            <h1>Facebook</h1>
+        </div>
+        <div id="lrs" class="step" data-x="1800" data-y="1600" data-z="-1000">
+            <img src="images/lrs.png" width="300px" style="float: left;">
+            <div style="float: left; margin-top: 20px;">
+                <cite>"
+                    <span class="medium red">Mateusz</span>
+                    <span class="medium green">przeczytał</span>
+                    <span class="medium blue">artykuł</span>    
+                "</cite>
+            </div>
+            <div style="float: left; margin-top: 20px;">
+                <cite>"
+                    <span class="medium red">Darek</span>
+                    <span class="medium green">skomentował</span>
+                    <span class="medium blue">artukuł Moniki</span>    
+                "</cite>
+            </div>
+            <div style="float: left; margin-top: 20px;">
+                <cite>"
+                    <span class="medium red">Monika</span>
+                    <span class="medium green">napisała</span>
+                    <span class="medium blue">artukuł o słoniach</span>   
+                "</cite>
+            </div>
+        </div>
+        <div id="wyrazenie" class="step" data-x="3200" data-rotate="150">
+            <span><img src="images/student.png" width="100px"><span class="name">Podmiot</span><span class="small">Osoba lub grupa osób</span></span>
+            <span><img src="images/read.gif" width="100px"><span class="name">Orzeczenie</span><span class="small">Akcja</span></span>
+            <span><img src="images/object.png" width="100px"><span class="name">Dopełnienie</span><span class="small">Coś czego się uczymy</span></span>
+            <span><img src="images/result.png" width="100px"><span class="name">Wynik</span><span class="small">Mierzalny wynik wykonanej czynności</span></span>
+            <span><img src="images/context.png" width="100px"><span class="name">Kontekst</span><span class="small">Pozostałe informacje</span></span>
+        </div>
+        <div id="zalety" class="step" data-x="4000" data-y="800">
+            <h1>Zalety</h1>
+            <ul>
+                <li>Brak ograniczenia co do typu osiągnięcia</li>
+                <li>Brak ścisłego powiązania z systemem uczącym</li>
+                <li>Współdzielenie swoich osiągnięć z innymi</li>
+            </ul>
+        </div>
+        <div id="zaletycd" class="step" data-x="4000" data-y="1600">
+            <h1>Zalety c.d.</h1>
+            <ul>
+                <li>REST API</li>
+                <li>Raportowanie wyników zagregowanych dla dowolnej kolejkcji wyników</li>
+                <li>Uczenie adaptacyjne</li>
+                <li>...</li>
+            </ul>
+        </div>
+        <div id="przypadkiurzycia" class="step" data-x="5500" data-y="1000" data-z="-500">
+            <h1>Przykłady zastosowania</h1>
+            <ul>
+                <li>Aplikacją rejestrująca uczestników na konferencję</li>
+                <li>Serwis udostępniający filmiki instruktażowe</li>
+                <li>LMS - przechowywanie ocen</li>
+                <li>Wtyczka do przeglądarki - "Przeczytałem to"</li>
+            </ul>
+        </div>
+        <div id="dziekuje" class="step" data-x="6600" data-y='3000' data-scale='10'>
+            <h1>Dziękuję</h1>
+            <p>Pytania?</p>
+        </div>
+    </div>
+    <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+        <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+    </div>
+    <script type="text/javascript" src="js/impress.js"></script>
+    <script type="text/javascript">impress().init();</script>
+</body>
+</html>
